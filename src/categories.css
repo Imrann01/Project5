@@ -1,0 +1,20 @@
+.categories {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.categories li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: #333;
+}
+
+.categories li a:hover {
+  background-color: #555;
+}

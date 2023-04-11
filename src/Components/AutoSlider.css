@@ -1,0 +1,73 @@
+/* AutoSlider.css */
+
+.slider-container {
+  margin: 0 auto;
+  max-width: 1600px;
+}
+
+.slide-container {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  text-align: center;
+  height: 150px;
+  max-width: 250px;
+}
+
+.slide-container h3 {
+  margin-bottom: 10px;
+}
+
+.slide-container button {
+  background-color: #4caf50;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+.slide-container button:hover {
+  background-color: #3e8e41;
+}
+.custom-slider {
+  margin: 0 auto;
+ 
+  max-height: 200px; /* Dots css */
+} 
+
+.custom-slider .slick-slide {
+  margin: 0px 30px; /* add margin between slides */
+}
+
+/* AutoSlider.css */
+
+.custom-slider .slick-prev,
+.custom-slider .slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+ 
+  border-radius: 50%;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.custom-slider .slick-prev {
+  left: 10px;
+}
+
+.custom-slider .slick-next {
+  right: 10px;
+}

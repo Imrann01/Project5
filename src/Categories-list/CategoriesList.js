@@ -1,34 +1,25 @@
+import { Link } from 'react-router-dom';
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import AutoSlider from './Components/AutoSlider';
-import Slide1 from './Components/Slide1';
-import Slide2 from './Components/Slide2';
-import Slide3 from './Components/Slide3';
-import Slide4 from './Components/Slide4';
-import Slide5 from './Components/Slide5';
-import Slide6 from './Components/Slide6';
-import CategoryList from './Categories-list/CategoriesList';
-
-
-
-
-function App() {
+function CategoryList() {
   return (
-    <Router>     
-      <Routes>
-        <Route path="/" element={<AutoSlider />} />
-        <Route path="/slide1" element={<Slide1 />} />
-        <Route path="/slide2" element={<Slide2 />} />
-        <Route path="/slide3" element={<Slide3 />} />
-        <Route path="/slide4" element={<Slide4 />} />
-        <Route path="/slide5" element={<Slide5 />} />
-        <Route path="/slide6" element={<Slide6 />} />
-        <Route path='/categories' element ={<CategoryList />} />
-      </Routes>
-    
-    </Router>
+    <ul>
+      <li>
+        <Link to="/category1" target="_blank">Category 1</Link>
+      </li>
+      <li>
+        <Link to="/category2" target="_blank">Category 2</Link>
+      </li>
+      <li>
+        <Link to="/category3" target="_blank">Category 3</Link>
+      </li>
+      <li>
+        <Link to="/category4" target="_blank">Category 4</Link>
+      </li>
+      <li>
+        <Link to="/category5" target="_blank">Category 5</Link>
+      </li>
+    </ul>
   );
 }
 
-
-export default App; 
+export default CategoryList;
